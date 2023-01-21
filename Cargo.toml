@@ -1,0 +1,21 @@
+[package]
+license = "MIT"
+name = "tri"
+version = "0.0.1"
+edition = "2021"
+authors = ["Hakan Ozler", "Hakan Ozler <ozler.hakan@gmail.com>"]
+description = "translate a given text from English to Turkish using Google Translate API"
+readme = "README.adoc"
+homepage = "https://github.com/ozlerhakan/tri"
+repository = "https://github.com/ozlerhakan/tri"
+keywords = ["translater", "utility", "words"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0.91"
+clap = { version = "4.0.32", features = ["derive", "env"] }
+dotenv = "0.15.0"
+
