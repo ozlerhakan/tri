@@ -1,2 +1,7 @@
 = Tri
 
+----
+$ cargo build --verbose
+$ export TRI_GTAPI_KEY="****-****"
+$ cargo build test --verbose
+----
