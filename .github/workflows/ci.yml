@@ -21,5 +21,5 @@ jobs:
       - run: cargo build --verbose
       - run: cargo test --verbose
         env:
-          TRI_GTAPI_KEY: ${{ secrets.GTRAPI_KEY }}
+          TRI_GTAPI_KEY: ${{ secrets.TRI_GTAPI_KEY }}
           RUST_BACKTRACE: 1
